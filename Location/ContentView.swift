@@ -1,23 +1,28 @@
-//
-//  ContentView.swift
-//  Location
-//
-//  Created by Retno Shintya Hariyani on 15/05/24.
-//
+
 
 import SwiftUI
+import UIKit
+import MapKit
+
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            TabView {
+                NearbyActivitiesView()
+                    .tabItem {
+                        Label("Nearby", systemImage: "map")
+                    }
+                
+                MyActivitiesView()
+                    .tabItem {
+                        Label("My Activities", systemImage: "person.circle")
+                    }
+            }
         }
-        .padding()
-    }
 }
+
+
+
 
 #Preview {
     ContentView()

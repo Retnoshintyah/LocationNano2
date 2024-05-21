@@ -11,6 +11,13 @@
 		4D6E05F82BF498890092672E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6E05F72BF498890092672E /* ContentView.swift */; };
 		4D6E05FA2BF4988A0092672E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D6E05F92BF4988A0092672E /* Assets.xcassets */; };
 		4D6E05FD2BF4988A0092672E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D6E05FC2BF4988A0092672E /* Preview Assets.xcassets */; };
+		4D6E06082BFB10360092672E /* LocationInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6E06072BFB10360092672E /* LocationInputView.swift */; };
+		4D6E060A2BFC57930092672E /* MyActivitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6E06092BFC57930092672E /* MyActivitiesView.swift */; };
+		4D6E060C2BFC58000092672E /* NearbyActivitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6E060B2BFC58000092672E /* NearbyActivitiesView.swift */; };
+		4D6E060E2BFC583C0092672E /* EditActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6E060D2BFC583C0092672E /* EditActivityView.swift */; };
+		4D6E06102BFC586C0092672E /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6E060F2BFC586C0092672E /* Activity.swift */; };
+		4D6E06122BFC59070092672E /* ActivityCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6E06112BFC59070092672E /* ActivityCardView.swift */; };
+		4D6E06142BFC82810092672E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D6E06132BFC82810092672E /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,14 @@
 		4D6E05F72BF498890092672E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4D6E05F92BF4988A0092672E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D6E05FC2BF4988A0092672E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4D6E06072BFB10360092672E /* LocationInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInputView.swift; sourceTree = "<group>"; };
+		4D6E06092BFC57930092672E /* MyActivitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyActivitiesView.swift; sourceTree = "<group>"; };
+		4D6E060B2BFC58000092672E /* NearbyActivitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyActivitiesView.swift; sourceTree = "<group>"; };
+		4D6E060D2BFC583C0092672E /* EditActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditActivityView.swift; sourceTree = "<group>"; };
+		4D6E060F2BFC586C0092672E /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		4D6E06112BFC59070092672E /* ActivityCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCardView.swift; sourceTree = "<group>"; };
+		4D6E06132BFC82810092672E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4D6E06152BFC82860092672E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +66,16 @@
 		4D6E05F42BF498890092672E /* Location */ = {
 			isa = PBXGroup;
 			children = (
+				4D6E060F2BFC586C0092672E /* Activity.swift */,
 				4D6E05F52BF498890092672E /* LocationApp.swift */,
 				4D6E05F72BF498890092672E /* ContentView.swift */,
+				4D6E06072BFB10360092672E /* LocationInputView.swift */,
+				4D6E06092BFC57930092672E /* MyActivitiesView.swift */,
+				4D6E060B2BFC58000092672E /* NearbyActivitiesView.swift */,
+				4D6E060D2BFC583C0092672E /* EditActivityView.swift */,
+				4D6E06112BFC59070092672E /* ActivityCardView.swift */,
 				4D6E05F92BF4988A0092672E /* Assets.xcassets */,
+				4D6E06152BFC82860092672E /* GoogleService-Info.plist */,
 				4D6E05FB2BF4988A0092672E /* Preview Content */,
 			);
 			path = Location;
@@ -62,6 +84,7 @@
 		4D6E05FB2BF4988A0092672E /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				4D6E06132BFC82810092672E /* GoogleService-Info.plist */,
 				4D6E05FC2BF4988A0092672E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -127,6 +150,7 @@
 			files = (
 				4D6E05FD2BF4988A0092672E /* Preview Assets.xcassets in Resources */,
 				4D6E05FA2BF4988A0092672E /* Assets.xcassets in Resources */,
+				4D6E06142BFC82810092672E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +161,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D6E06082BFB10360092672E /* LocationInputView.swift in Sources */,
+				4D6E060C2BFC58000092672E /* NearbyActivitiesView.swift in Sources */,
+				4D6E06102BFC586C0092672E /* Activity.swift in Sources */,
+				4D6E06122BFC59070092672E /* ActivityCardView.swift in Sources */,
 				4D6E05F82BF498890092672E /* ContentView.swift in Sources */,
 				4D6E05F62BF498890092672E /* LocationApp.swift in Sources */,
+				4D6E060A2BFC57930092672E /* MyActivitiesView.swift in Sources */,
+				4D6E060E2BFC583C0092672E /* EditActivityView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +302,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Location/Preview Content\"";
+				DEVELOPMENT_TEAM = 7D3M6L6DX3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -300,6 +331,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Location/Preview Content\"";
+				DEVELOPMENT_TEAM = 7D3M6L6DX3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

@@ -38,24 +38,6 @@ struct MyActivitiesView: View {
                 // Navigation bar with buttons
                 HStack {
                     Button(action: {
-                        selectedTab = .nearby
-                        fetchNearbyActivities()
-                    }) {
-                        VStack {
-                            Image(systemName: "location.circle")
-                                .font(.system(size: 24))
-                                .padding()
-                                .background(Color.blue)
-                                .foregroundColor(.white)
-                                .clipShape(Circle())
-                            Text("Near")
-                                .font(.caption)
-                        }
-                    }
-
-                    Spacer()
-
-                    Button(action: {
                         selectedTab = .myActivities
                         fetchMyActivities()
                     }) {
@@ -63,24 +45,42 @@ struct MyActivitiesView: View {
                             Image(systemName: "person.circle")
                                 .font(.system(size: 24))
                                 .padding()
-                                .background(Color.blue)
+                                .padding(.horizontal, 8)
+                                .background(buttonColor(for: .myActivities))
                                 .foregroundColor(.white)
                                 .clipShape(Circle())
-                            Text("My Activities")
+                            Text("All")
                                 .font(.caption)
                         }
                     }
 
-                    Spacer()
+                    Button(action: {
+                        selectedTab = .nearby
+                        fetchNearbyActivities()
+                    }) {
+                        VStack {
+                            Image(systemName: "location.circle")
+                                .font(.system(size: 24))
+                                .padding()
+                                .padding(.horizontal, 8)
+                                .background(buttonColor(for: .nearby))
+                                .foregroundColor(.white)
+                                .clipShape(Circle())
+                            Text("Near")
+                                .font(.caption)
+                        }
+                    }
 
                     Button(action: {
+                        selectedTab = .add
                         showingActivitySheet = true
                     }) {
                         VStack {
                             Image(systemName: "plus.circle")
                                 .font(.system(size: 24))
                                 .padding()
-                                .background(Color.green)
+                                .padding(.horizontal, 8)
+                                .background(buttonColor(for: .add))
                                 .foregroundColor(.white)
                                 .clipShape(Circle())
                             Text("Add")
@@ -151,6 +151,10 @@ struct MyActivitiesView: View {
                 } ?? []
             }
         }
+    }
+
+    private func buttonColor(for tab: Tab) -> Color {
+        return selectedTab == tab ? .blue : Color(UIColor.systemBlue).opacity(0.3)
     }
 }
 

@@ -40,22 +40,28 @@
 		4D096D382BFC9DBB008223C6 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 4D096D372BFC9DBB008223C6 /* FirebaseStorage */; };
 		4D096D3A2BFC9DBB008223C6 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 4D096D392BFC9DBB008223C6 /* FirebaseStorageCombine-Community */; };
 		4D096D3C2BFC9DBB008223C6 /* FirebaseVertexAI-Preview in Frameworks */ = {isa = PBXBuildFile; productRef = 4D096D3B2BFC9DBB008223C6 /* FirebaseVertexAI-Preview */; };
-		4D169BE72C038E8400D1AFF9 /* ActivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D169BE62C038E8400D1AFF9 /* ActivityViewModel.swift */; };
+		4D169BE92C04369500D1AFF9 /* AddActivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D169BE82C04369500D1AFF9 /* AddActivityViewModel.swift */; };
+		4D169BEB2C043A9600D1AFF9 /* FindActivitiesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D169BEA2C043A9600D1AFF9 /* FindActivitiesViewModel.swift */; };
+		4D169BED2C043AD600D1AFF9 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D169BEC2C043AD600D1AFF9 /* LocationManager.swift */; };
+		4D169BF12C0445BC00D1AFF9 /* DetailActivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D169BF02C0445BC00D1AFF9 /* DetailActivityViewModel.swift */; };
 		4D2A2DA72C02EDB300BFC9D0 /* DetailActivityVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2A2DA62C02EDB300BFC9D0 /* DetailActivityVIew.swift */; };
 		4D6E05F62BF498890092672E /* LocationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6E05F52BF498890092672E /* LocationApp.swift */; };
 		4D6E05F82BF498890092672E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6E05F72BF498890092672E /* ContentView.swift */; };
 		4D6E05FA2BF4988A0092672E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D6E05F92BF4988A0092672E /* Assets.xcassets */; };
 		4D6E05FD2BF4988A0092672E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D6E05FC2BF4988A0092672E /* Preview Assets.xcassets */; };
-		4D6E06082BFB10360092672E /* LocationInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6E06072BFB10360092672E /* LocationInputView.swift */; };
-		4D6E060A2BFC57930092672E /* MyActivitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6E06092BFC57930092672E /* MyActivitiesView.swift */; };
-		4D6E060E2BFC583C0092672E /* EditActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6E060D2BFC583C0092672E /* EditActivityView.swift */; };
+		4D6E06082BFB10360092672E /* MapDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6E06072BFB10360092672E /* MapDisplayView.swift */; };
+		4D6E060A2BFC57930092672E /* FindActivitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6E06092BFC57930092672E /* FindActivitiesView.swift */; };
+		4D6E060E2BFC583C0092672E /* AddActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6E060D2BFC583C0092672E /* AddActivityView.swift */; };
 		4D6E06102BFC586C0092672E /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6E060F2BFC586C0092672E /* Activity.swift */; };
 		4D6E06122BFC59070092672E /* ActivityCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6E06112BFC59070092672E /* ActivityCardView.swift */; };
 		4D6E06142BFC82810092672E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D6E06132BFC82810092672E /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4D169BE62C038E8400D1AFF9 /* ActivityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewModel.swift; sourceTree = "<group>"; };
+		4D169BE82C04369500D1AFF9 /* AddActivityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActivityViewModel.swift; sourceTree = "<group>"; };
+		4D169BEA2C043A9600D1AFF9 /* FindActivitiesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindActivitiesViewModel.swift; sourceTree = "<group>"; };
+		4D169BEC2C043AD600D1AFF9 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		4D169BF02C0445BC00D1AFF9 /* DetailActivityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailActivityViewModel.swift; sourceTree = "<group>"; };
 		4D1B0D452C022CD700D83E83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4D2A2DA62C02EDB300BFC9D0 /* DetailActivityVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailActivityVIew.swift; sourceTree = "<group>"; };
 		4D6E05F22BF498890092672E /* Location.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Location.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,9 +69,9 @@
 		4D6E05F72BF498890092672E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4D6E05F92BF4988A0092672E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D6E05FC2BF4988A0092672E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		4D6E06072BFB10360092672E /* LocationInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInputView.swift; sourceTree = "<group>"; };
-		4D6E06092BFC57930092672E /* MyActivitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyActivitiesView.swift; sourceTree = "<group>"; };
-		4D6E060D2BFC583C0092672E /* EditActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditActivityView.swift; sourceTree = "<group>"; };
+		4D6E06072BFB10360092672E /* MapDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDisplayView.swift; sourceTree = "<group>"; };
+		4D6E06092BFC57930092672E /* FindActivitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindActivitiesView.swift; sourceTree = "<group>"; };
+		4D6E060D2BFC583C0092672E /* AddActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActivityView.swift; sourceTree = "<group>"; };
 		4D6E060F2BFC586C0092672E /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		4D6E06112BFC59070092672E /* ActivityCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCardView.swift; sourceTree = "<group>"; };
 		4D6E06132BFC82810092672E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -127,7 +133,10 @@
 		4D169BE32C038DDE00D1AFF9 /* View Model */ = {
 			isa = PBXGroup;
 			children = (
-				4D169BE62C038E8400D1AFF9 /* ActivityViewModel.swift */,
+				4D169BE82C04369500D1AFF9 /* AddActivityViewModel.swift */,
+				4D169BEA2C043A9600D1AFF9 /* FindActivitiesViewModel.swift */,
+				4D169BEC2C043AD600D1AFF9 /* LocationManager.swift */,
+				4D169BF02C0445BC00D1AFF9 /* DetailActivityViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -136,9 +145,9 @@
 			isa = PBXGroup;
 			children = (
 				4D6E05F72BF498890092672E /* ContentView.swift */,
-				4D6E06072BFB10360092672E /* LocationInputView.swift */,
-				4D6E06092BFC57930092672E /* MyActivitiesView.swift */,
-				4D6E060D2BFC583C0092672E /* EditActivityView.swift */,
+				4D6E06072BFB10360092672E /* MapDisplayView.swift */,
+				4D6E06092BFC57930092672E /* FindActivitiesView.swift */,
+				4D6E060D2BFC583C0092672E /* AddActivityView.swift */,
 				4D6E06112BFC59070092672E /* ActivityCardView.swift */,
 				4D2A2DA62C02EDB300BFC9D0 /* DetailActivityVIew.swift */,
 			);
@@ -302,15 +311,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D6E06082BFB10360092672E /* LocationInputView.swift in Sources */,
+				4D6E06082BFB10360092672E /* MapDisplayView.swift in Sources */,
+				4D169BEB2C043A9600D1AFF9 /* FindActivitiesViewModel.swift in Sources */,
 				4D6E06102BFC586C0092672E /* Activity.swift in Sources */,
 				4D6E06122BFC59070092672E /* ActivityCardView.swift in Sources */,
 				4D6E05F82BF498890092672E /* ContentView.swift in Sources */,
 				4D6E05F62BF498890092672E /* LocationApp.swift in Sources */,
-				4D6E060A2BFC57930092672E /* MyActivitiesView.swift in Sources */,
+				4D6E060A2BFC57930092672E /* FindActivitiesView.swift in Sources */,
 				4D2A2DA72C02EDB300BFC9D0 /* DetailActivityVIew.swift in Sources */,
-				4D6E060E2BFC583C0092672E /* EditActivityView.swift in Sources */,
-				4D169BE72C038E8400D1AFF9 /* ActivityViewModel.swift in Sources */,
+				4D169BF12C0445BC00D1AFF9 /* DetailActivityViewModel.swift in Sources */,
+				4D169BED2C043AD600D1AFF9 /* LocationManager.swift in Sources */,
+				4D6E060E2BFC583C0092672E /* AddActivityView.swift in Sources */,
+				4D169BE92C04369500D1AFF9 /* AddActivityViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

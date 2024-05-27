@@ -1,14 +1,14 @@
+
 import SwiftUI
 import MapKit
 
 struct DetailActivityView: View {
     let activity: Activity
-    @State private var locationName: String? = nil
+    @StateObject private var viewModel = DetailActivityViewModel()
     
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
-                // Image Section
                 if let pictureData = activity.pictureData, let uiImage = UIImage(data: pictureData) {
                     Image(uiImage: uiImage)
                         .resizable()
@@ -29,13 +29,11 @@ struct DetailActivityView: View {
                         .padding(.horizontal)
                 }
                 
-                // Title Section
                 Text(activity.name)
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .padding(.horizontal)
                 
-                // Description Section
                 if let description = activity.description {
                     Text(description)
                         .font(.body)
@@ -43,9 +41,7 @@ struct DetailActivityView: View {
                         .foregroundColor(.secondary)
                 }
                 
-                // Action and Time Section
                 HStack {
-                    // WhatsApp Link
                     if let whatsappLink = activity.whatsappLink, let url = URL(string: whatsappLink) {
                         Button(action: {
                             UIApplication.shared.open(url)
@@ -67,17 +63,15 @@ struct DetailActivityView: View {
                     
                     Spacer()
                     
-                    // Time
                     Text("Time: \(formattedDate(activity.time))")
                         .font(.subheadline)
                         .padding(.horizontal)
                         .foregroundColor(.secondary)
                 }
                 
-                // Location Section
                 if let latitude = activity.latitude, let longitude = activity.longitude {
                     VStack(alignment: .leading, spacing: 10) {
-                        if let locationName = locationName {
+                        if let locationName = viewModel.locationName {
                             Text("Location: \(locationName)")
                                 .font(.headline)
                                 .padding(.horizontal)
@@ -89,8 +83,8 @@ struct DetailActivityView: View {
                                 .foregroundColor(.secondary)
                         }
                         
-                        MapView(coordinate: .constant(CLLocationCoordinate2D(latitude: latitude, longitude: longitude)), mode: .showLocation)
-                            .frame(height: 300) // Increased height for the map
+                        MapView(coordinate: .constant(CLLocationCoordinate2D(latitude: latitude, longitude: longitude)))
+                            .frame(height: 300)
                             .cornerRadius(15)
                             .padding(.horizontal)
                     }
@@ -99,6 +93,9 @@ struct DetailActivityView: View {
                     .cornerRadius(15)
                     .padding(.horizontal)
                     .shadow(radius: 5)
+                    .onAppear {
+                        viewModel.fetchLocationName(latitude: latitude, longitude: longitude)
+                    }
                 }
             }
             .padding(.top)
@@ -111,9 +108,6 @@ struct DetailActivityView: View {
             )
         )
         .navigationBarTitle(activity.name, displayMode: .inline)
-        .onAppear {
-            fetchLocationName()
-        }
     }
     
     private func formattedDate(_ date: Date) -> String {
@@ -122,24 +116,8 @@ struct DetailActivityView: View {
         formatter.timeStyle = .short
         return formatter.string(from: date)
     }
-    
-    private func fetchLocationName() {
-        guard let latitude = activity.latitude, let longitude = activity.longitude else {
-            return
-        }
-        
-        let location = CLLocation(latitude: latitude, longitude: longitude)
-        let geocoder = CLGeocoder()
-        geocoder.reverseGeocodeLocation(location) { (placemarks, error) in
-            if let error = error {
-                print("Error reverse geocoding location: \(error)")
-                self.locationName = "Unknown location"
-            } else if let placemark = placemarks?.first {
-                self.locationName = placemark.name ?? "Unnamed place"
-            }
-        }
-    }
 }
+
 
 struct DetailActivityView_Previews: PreviewProvider {
     static var previews: some View {

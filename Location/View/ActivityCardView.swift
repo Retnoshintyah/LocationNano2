@@ -26,7 +26,7 @@ struct ActivityCard: View {
             Text(activity.description ?? "No Description")
                 .font(.subheadline)
                 .foregroundColor(.secondary)
-                .multilineTextAlignment(.leading) // Align the text to the leading edge
+                .multilineTextAlignment(.leading) 
                 .padding(.bottom, 5)
             
             Spacer()
@@ -35,7 +35,7 @@ struct ActivityCard: View {
         .background(Color.white)
         .cornerRadius(10)
         .shadow(radius: 5)
-        .frame(width: 270) // Added a fixed width for consistency
+        .frame(width: 270) 
     }
 }
 
